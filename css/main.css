@@ -1,0 +1,66 @@
+body, html {
+    height: 100%;
+}
+  
+* {
+    box-sizing: border-box;
+}
+
+#background-img {
+    background-image: url("/img/background.jpg");
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    height: 100%; 
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#block {
+    background-color: #ffffff;
+    background-color: #ffffffe8;
+    color: #2f2f2f;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 3px 3px 10px #353535cc;
+}
+
+#submit-button {
+    margin-top: 15px;
+}
+
+#retry-button {
+    margin-top: 15px;
+}
+
+input, label {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: no-drop;
+}
+
+/*------ Responsive -------*/
+@media screen and (max-width: 1750px) {
+    #block {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #block #questions {
+        font-size: 25px;
+    }
+}
